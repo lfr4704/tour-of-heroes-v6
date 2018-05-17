@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## node was updated to 8.11.2
+
+## to start app on cloud9 do the following:
+
+Edit the following line in  node_modules/webpack-dev-server/lib/Server.js (line 565), change to:
+
+return true;
+
+I am using cloud9 IDE then run: ng serve --port 8080 --host 0.0.0.0. Now works fine.

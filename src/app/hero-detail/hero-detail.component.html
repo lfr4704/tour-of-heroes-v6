@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+ 
+  <h2>{{ hero.name | uppercase }} Details</h2><!--apply uppercasePipe to format name-->
+  <div><span>id: </span>{{hero.id}}</div>
+<!--this allows for a two way data binding [(ngModel)].  
+That means data flow from the component class out to the screen and from the screen back to the class.-->
+<div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+</div>
+
+</div>
